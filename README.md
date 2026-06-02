@@ -1,4 +1,4 @@
-# yet another idle rpg
+# yet another idle rpg (useful by any other name)
 ###### by Miktaew
 
 
