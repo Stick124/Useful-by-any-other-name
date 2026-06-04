@@ -2349,7 +2349,7 @@ Multiplies AP with daggers by ${Math.round((get_total_skill_coefficient({skill_i
         names: {0: "Woodcutting"}, 
         description: "Get better with chopping the wood and recognizing useful trees",
         category: "Gathering",
-        base_xp_cost: 5,
+        base_xp_cost: 10,
         visibility_treshold: 4,
         xp_scaling: 1.3,
 		max_level: 60,
