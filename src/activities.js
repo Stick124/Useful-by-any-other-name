@@ -186,6 +186,14 @@ class Gathering extends Training {
         is_unlocked: true,
     });
 
+    activities["scavenging"] = new Gathering({
+        name: "scavenging",
+        action_text: "Searching near the forrest",
+        description: "Look for anything eye catching",
+        base_skills_names: ["scavenging"],
+        is_unlocked: true,
+    });
+
     activities["fishing"] = new Gathering({
         name: "fishing",
         action_text: "Waiting for a bite",
