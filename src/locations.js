@@ -327,6 +327,7 @@ class LocationActivity{
                  get_payment = ()=>{return 1},
                  is_unlocked = true, 
                  working_period = 1,
+				 types = [],
                  infinite = true,
                  availability_time,
                  availability_seasons,
@@ -2293,6 +2294,7 @@ There's another gate on the wall in front of you, but you have a strange feeling
             activity_name: "scavenging",
             starting_text: "Gather stuff on the outskirts",
 			types: [{type: "wild", stage: 1, xp_gain: 1}],
+			applied_effects: [{effect: "Wet", duration: 30}],
             skill_xp_per_tick: 1,
             is_unlocked: true,
             gained_resources: {
