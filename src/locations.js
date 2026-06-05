@@ -2294,7 +2294,7 @@ There's another gate on the wall in front of you, but you have a strange feeling
             activity_name: "scavenging",
             starting_text: "Gather stuff on the outskirts",
 			types: [{type: "wild", stage: 1, xp_gain: 1}],
-			applied_effects: [{effect: health_loss_flat: {flat: -5}}],
+			applied_effects: [{effect: health_loss_flat: {flat: -5}}]
             skill_xp_per_tick: 1,
             is_unlocked: true,
             gained_resources: {
