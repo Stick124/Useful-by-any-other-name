@@ -47,7 +47,7 @@ class ActiveEffect {
 
 	effect_templates["Pain"] = new ActiveEffect({
         name: "Pain",
-        effects: 
+        effects: {
 			stats: {
                 health_loss_flat: {flat: -5},
             }
