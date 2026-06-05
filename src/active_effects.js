@@ -45,6 +45,13 @@ class ActiveEffect {
         },
     });
 
+	effect_templates["Pain"] = new ActiveEffect({
+        name: "Pain",
+        effects: {
+            health_loss_flat: {flat: -5},
+        },
+    });
+
     effect_templates["Cold"] = new ActiveEffect({
         name: "Cold",
         effects: {
