@@ -637,6 +637,20 @@ function get_location_type_penalty(type, stage, stat, category) {
             }
         }
     });
+
+	location_types["wild"] = new LocationType({
+        name: "wild",
+        stages: {
+            1: {
+                description: "Attempting to stay dry in conditions like this is impossible",
+				related_skill: "Fortitude",
+				effects: {
+				health_loss_flat: {flat: -5},
+				}
+            }
+        }
+    });
+
     location_types["eldritch"] = new LocationType({
         name: "eldritch",
         stages: {
@@ -2274,6 +2288,20 @@ There's another gate on the wall in front of you, but you have a strange feeling
             },
             require_tool: true,
         }),
+
+		"scavenging": new LocationGatheringActivity({
+            activity_name: "scavenging",
+            starting_text: "Gather stuff on the outskirts",
+			types: [{type: "wild", stage: 1, xp_gain: 1}],
+            skill_xp_per_tick: 1,
+            is_unlocked: true,
+            gained_resources: {
+                resources: [{name: "Rough wood log", ammount: [[1,1], [1,1]], chance: [0.5, 1]}, {name: "Tree sap", ammount: [[1,1], [1,1]], chance: [0.01, 0.1]}], 
+                time_period: [30, 16],
+                skill_required: [0, 12]
+            },
+        }),
+		
         "sand": new LocationGatheringActivity({
             activity_id: "sand",
             activity_name: "digging",
