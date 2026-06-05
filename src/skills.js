@@ -2355,6 +2355,16 @@ Multiplies AP with daggers by ${Math.round((get_total_skill_coefficient({skill_i
 		max_level: 60,
     });
 
+	skills["scavenging"] = new Skill({
+        names: {0: "scavenging"}, 
+        description: "Get better with finding hidden loot",
+        category: "Gathering",
+        base_xp_cost: 10,
+        visibility_treshold: 4,
+        xp_scaling: 1.3,
+		max_level: 60,
+    });
+
     skills["Mining"] = new Skill({
         names: {0: "Mining"}, 
         description: "Get better with mining for ore and stone",
